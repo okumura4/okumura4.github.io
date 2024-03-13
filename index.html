@@ -11,6 +11,92 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<meta name="google-site-verification" content="rEh12Qo5LbUpploFO2hh2rI_k25aXV9Gvrtcq4tfQmQ" />
+		<style>
+			table {
+				width: 1200px;
+				height: 0px;
+				border:2.5px solid #6b6767;
+				border-collapse: collapse;
+				margin: 0 auto;
+				padding: 0;
+				height: 0px;
+				table-layout: fixed;
+			}
+
+			table tr {
+			background-color: #e6f2f5;
+			padding: .35em;
+			border-bottom: 2px solid #fff;
+			}
+			table th,
+			table td {
+			padding: 1em 10px 1em 1em;
+			border-right: 2px solid #fff;
+			}
+			table thead tr{
+			background-color: #167F92;
+			color:#fff;
+			}
+			table tbody th {
+			background: #78bbc7;
+			color: #fff;
+			}
+			.txt{
+			text-align: left;
+			font-size: .85em;
+			}
+			.non{
+			background:#fff;
+			}
+			@media screen and (max-width: 600px) {
+			table {
+			border: 0;
+			width:100%
+			}
+			table th{
+			background-color: #167F92;
+			display: block;
+			border-right: none;
+			}
+			table thead {
+			border: none;
+			clip: rect(0 0 0 0);
+			height: 1px;
+			margin: -1px;
+			overflow: hidden;
+			padding: 0;
+			position: absolute;
+			width: 1px;
+			}
+			table tr {
+			display: block;
+			margin-bottom: .625em;
+			}
+			table td {
+			border-bottom: 1px solid #bbb;
+			display: block;
+			font-size: .8em;
+			text-align: right;
+			position: relative;
+			padding: .625em .625em .625em 4em;
+			border-right: none;
+			}
+			
+			table td::before {
+			content: attr(data-label);
+			font-weight: bold;
+			position: absolute;
+			left: 10px;
+			color: #167F92;
+			}
+			table td:last-child {
+			border-bottom: 0;
+			}
+			table tbody th {
+			color: #fff;
+			}
+			}
+		</style>
 	</head>
 	<body class="is-preload">
 		<div id="page-wrapper">
@@ -26,6 +112,7 @@
 							<ul>
 								<li class="current"><a href="index.html">Home</a></li>
 								<li><a href="Profile.html">Profile</a></li>
+								<li><a href="Schedule.html">Schedule</a></li>
 								<li><a href="Publications.html">Publications</a></li>
 								<li><a href="Talks.html">Talks</a></li>
 							</ul>
