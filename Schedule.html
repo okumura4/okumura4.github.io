@@ -20,9 +20,7 @@
 				padding: 0;
 				height: 0px;
 				table-layout: fixed;
-				overflow-x: auto;
 			}
-
 			table tr {
 			background-color: #e6f2f5;
 			padding: .35em;
@@ -41,6 +39,9 @@
 			background: #78bbc7;
 			color: #fff;
 			}
+			.table-scroll {
+			overflow-x: auto;
+			}
 			.txt{
 			text-align: left;
 			font-size: .85em;
@@ -48,6 +49,54 @@
 			.non{
 			background:#fff;
 			}
+			/* @media screen and (max-width: 600px) {
+			table {
+			border: 0;
+			width:100%
+			}
+			table th{
+			background-color: #167F92;
+			display: block;
+			border-right: none;
+			}
+			table thead {
+			border: none;
+			clip: rect(0 0 0 0);
+			height: 1px;
+			margin: -1px;
+			overflow: hidden;
+			padding: 0;
+			position: absolute;
+			width: 1px;
+			}
+			table tr {
+			display: block;
+			margin-bottom: .625em;
+			}
+			table td {
+			border-bottom: 1px solid #bbb;
+			display: block;
+			font-size: .8em;
+			text-align: right;
+			position: relative;
+			padding: .625em .625em .625em 4em;
+			border-right: none;
+			}
+			
+			table td::before {
+			content: attr(data-label);
+			font-weight: bold;
+			position: absolute;
+			left: 10px;
+			color: #167F92;
+			}
+			table td:last-child {
+			border-bottom: 0;
+			}
+			table tbody th {
+			color: #fff;
+			}
+			} */
 		</style>
 	</head>
 	<body class="is-preload">
@@ -87,6 +136,7 @@
 									<!-- <span class="image featured"><img src="images/banner.jpg" alt="" /></span> -->
 									
 									<b><font size="6">前期</font></b><br>
+									<div class="table-scroll">
 									<table>
 										<thead>
 										    <tr>
@@ -149,6 +199,7 @@
 										    </tr>
 										</tbody>
 									</table>
+									</div>
 									<br>
 									O.H.(オフィスアワー)とは, 学生が担当教員に当該科目等に関する質問や相談ができる時間帯です. 
 									講義の質問や教員と話がしたいときにはオフィスアワーに気軽に研究室に訪問してください. 
